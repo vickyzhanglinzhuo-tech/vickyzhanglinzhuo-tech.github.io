@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>林昭 · 个人主页</title>
+    <meta
+      name="description"
+      content="林昭的个人网站封面：产品与界面设计，把复杂的事情做得清楚、好用。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="nav-mark" href="#top">林昭</a>
+      <nav class="nav-links" aria-label="页面导航">
+        <a href="#about">关于</a>
+        <a href="#work">在做的事</a>
+        <a href="#notes">近况</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-name">
+        <p class="hero-kicker">Personal site · Cover</p>
+        <h1 id="hero-name">
+          <span class="hero-name-cn">林昭</span>
+          <span class="hero-name-en">Lin Zhao</span>
+        </h1>
+        <p class="hero-lead">
+          把复杂的产品做得清楚、好用。<br />
+          目前在做界面、叙事与个人工具。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">认识一下</a>
+          <a class="btn btn-ghost" href="#contact">写信给我</a>
+        </div>
+        <p class="hero-meta">
+          <span>深圳 / 远程</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>开放合作</span>
+        </p>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-head">
+          <p class="eyebrow">01 — 关于</p>
+          <h2>我是谁</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-lead">
+            你好。我做产品与界面，关心一件事如何被理解、被使用、被记住。
+            这一页是网站的封面：先把人介绍清楚，再通向作品与文字。
+          </p>
+          <div class="about-copy">
+            <p>
+              过去几年，我在团队里把模糊的需求收成可交付的界面：信息架构、交互节奏、以及屏幕上真正需要留下的那几句话。
+            </p>
+            <p>
+              业余时间写一点随笔，也给自己做小工具。喜欢安静、可阅读的页面，不喜欢装饰盖过内容。
+            </p>
+            <dl class="facts">
+              <div>
+                <dt>现在</dt>
+                <dd>独立合作 / 产品设计</dd>
+              </div>
+              <div>
+                <dt>关注</dt>
+                <dd>工具、阅读、城市散步</dd>
+              </div>
+              <div>
+                <dt>语言</dt>
+                <dd>中文、English</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section work">
+        <div class="section-head">
+          <p class="eyebrow">02 — 在做的事</p>
+          <h2>能力与方向</h2>
+        </div>
+        <ul class="cards">
+          <li class="card">
+            <h3>产品与界面</h3>
+            <p>从问题到页面：结构、流程、组件与文案。让第一次打开的人知道该往哪走。</p>
+          </li>
+          <li class="card">
+            <h3>个人站点与叙事</h3>
+            <p>封面、作品集、随笔。少而准的视觉，让访问者在三十秒内建立印象。</p>
+          </li>
+          <li class="card">
+            <h3>小工具</h3>
+            <p>为自己和身边人做的轻量工具：记录、整理、提醒。能用比好看更重要，但两者可以一起做到。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="notes" class="section notes">
+        <div class="section-head">
+          <p class="eyebrow">03 — 近况</p>
+          <h2>最近在想</h2>
+        </div>
+        <ol class="note-list">
+          <li>
+            <time datetime="2026-08">2026.08</time>
+            <p>在整理一套个人站点模板：封面只做一件事——让人愿意往下读。</p>
+          </li>
+          <li>
+            <time datetime="2026-06">2026.06</time>
+            <p>重读了一些早期网页。发现留白和字号，比任何动效都更决定气质。</p>
+          </li>
+          <li>
+            <time datetime="2026-03">2026.03</time>
+            <p>开始把工作笔记公开化，挑出那些真正改过一次决策的句子。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-head">
+          <p class="eyebrow">04 — 联系</p>
+          <h2>一起做点什么</h2>
+        </div>
+        <p class="contact-lead">
+          合作、闲聊、或者只是打个招呼，都可以写信。我通常会在几天内回复。
+        </p>
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:hello@linzhao.me">hello@linzhao.me</a>
+            <span>邮箱</span>
+          </li>
+          <li>
+            <a href="https://github.com/" rel="noopener noreferrer" target="_blank">GitHub</a>
+            <span>代码</span>
+          </li>
+          <li>
+            <a href="#" aria-disabled="true">作品集</a>
+            <span>即将开放</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 林昭 · 个人网站封面</p>
+      <p>把下面的名字、简介和链接换成你自己的即可。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
