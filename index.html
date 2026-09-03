@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>林昭 · 个人主页</title>
+    <title>张琳茁 · 个人主页</title>
     <meta
       name="description"
-      content="林昭的个人网站封面：产品与界面设计，把复杂的事情做得清楚、好用。"
+      content="张琳茁，香港大学新闻学硕士（人工智能与创新），香港中文大学新闻传播学本科。个人网站封面。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,142 +20,463 @@
     <div class="grain" aria-hidden="true"></div>
 
     <header class="nav">
-      <a class="nav-mark" href="#top">林昭</a>
-      <nav class="nav-links" aria-label="页面导航">
-        <a href="#about">关于</a>
-        <a href="#work">在做的事</a>
-        <a href="#notes">近况</a>
-        <a href="#contact">联系</a>
-      </nav>
+      <div class="nav-bar">
+        <a class="nav-mark" href="#top">
+          <span class="nav-avatar">ZL</span>
+          <span>PORTFOLIO</span>
+        </a>
+        <nav class="nav-links" aria-label="页面导航">
+          <a href="#about">教育背景</a>
+          <a href="#internships">实习经历</a>
+          <a href="#projects">项目成果</a>
+          <a href="#contact">联系我</a>
+        </nav>
+        <a class="nav-resume" href="resume.pdf" download="张琳茁-简历.pdf">简历.pdf</a>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-name">
-        <p class="hero-kicker">Personal site · Cover</p>
-        <h1 id="hero-name">
-          <span class="hero-name-cn">林昭</span>
-          <span class="hero-name-en">Lin Zhao</span>
-        </h1>
-        <p class="hero-lead">
-          把复杂的产品做得清楚、好用。<br />
-          目前在做界面、叙事与个人工具。
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#about">认识一下</a>
-          <a class="btn btn-ghost" href="#contact">写信给我</a>
+        <div class="hero-copy">
+          <p class="hello-pill"><span class="hello-dot" aria-hidden="true"></span> HELLO / 你好</p>
+          <h1 id="hero-name">Hi, 我是张琳茁</h1>
+          <p class="hero-role">Zhang Linzhuo <span class="hero-vicky">Vicky</span></p>
+          <p class="hero-file">MY FILE / 报道、叙事与人工智能的交叉实践</p>
+          <p class="hero-lead">
+            关注新闻、叙事与未来媒体。<br />
+            用清楚的故事，连接人与正在变化的世界。
+          </p>
+          <ul class="hero-tags">
+            <li>双语新闻</li>
+            <li>内容设计</li>
+            <li>数据叙事</li>
+            <li>AI媒体</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="resume.pdf" download="张琳茁-简历.pdf">下载简历</a>
+            <a class="btn btn-cv" href="cv.pdf" download="Zhang-Linzhuo-CV.pdf">CV</a>
+            <a class="btn btn-ghost" href="#contact">联系我</a>
+          </div>
         </div>
-        <p class="hero-meta">
-          <span>深圳 / 远程</span>
-          <span class="dot" aria-hidden="true"></span>
-          <span>开放合作</span>
-        </p>
+        <div class="hero-visual">
+          <p class="hero-chip">OPEN TO WORK</p>
+          <figure class="hero-portrait">
+            <img
+              src="images/portrait.jpg"
+              alt="张琳茁 Vicky 在香港大学未来媒体学院门口"
+              width="640"
+              height="640"
+            />
+          </figure>
+          <p class="hero-now">NOW<br /><span>AI Media x 内容创作<br />持续把故事说清楚</span></p>
+          <p class="hero-ticker">📍Location：HKU School of Future Media</p>
+        </div>
       </section>
 
       <section id="about" class="section about">
-        <div class="section-head">
-          <p class="eyebrow">01 — 关于</p>
-          <h2>我是谁</h2>
+        <div class="section-head section-head-center">
+          <p class="eyebrow">01 / LEARNING PATH</p>
+          <h2>我的学习坐标</h2>
+          <span class="title-stroke" aria-hidden="true"></span>
         </div>
-        <div class="about-grid">
-          <p class="about-lead">
-            你好。我做产品与界面，关心一件事如何被理解、被使用、被记住。
-            这一页是网站的封面：先把人介绍清楚，再通向作品与文字。
-          </p>
-          <div class="about-copy">
-            <p>
-              过去几年，我在团队里把模糊的需求收成可交付的界面：信息架构、交互节奏、以及屏幕上真正需要留下的那几句话。
-            </p>
-            <p>
-              业余时间写一点随笔，也给自己做小工具。喜欢安静、可阅读的页面，不喜欢装饰盖过内容。
-            </p>
-            <dl class="facts">
-              <div>
-                <dt>现在</dt>
-                <dd>独立合作 / 产品设计</dd>
+        <div class="school-path">
+          <ol class="schools">
+            <li class="school">
+              <div class="school-visual">
+                <img
+                  class="school-campus"
+                  src="images/hku-campus.jpg"
+                  alt="香港大学校园"
+                  width="960"
+                  height="720"
+                />
+                <img
+                  class="school-logo"
+                  src="images/hku-sotm.png"
+                  alt="School of Future Media, The University of Hong Kong"
+                  width="1024"
+                  height="259"
+                />
               </div>
-              <div>
-                <dt>关注</dt>
-                <dd>工具、阅读、城市散步</dd>
+              <div class="school-body">
+                <p class="school-time">2025.08 — 2026.11</p>
+                <p class="school-degree">硕士 / 新闻学 · 人工智能与创新</p>
+                <h3>香港大学</h3>
+                <p class="school-college">未来媒体学院 · School of Future Media</p>
+                <p class="school-courses">
+                  <span class="school-courses-label">主修课程：</span>数字新闻（Digital Journalism）、中英新闻写作（Reporting and Writing）、视频新闻制作（Video News Production）、AI 媒体与创新（AI and Media Innovation）、新闻数据技能（Data Journalism）
+                </p>
+                <p class="school-award">入学奖学金 · 新闻及传媒研究中心，2025</p>
               </div>
-              <div>
-                <dt>语言</dt>
-                <dd>中文、English</dd>
+            </li>
+            <li class="school">
+              <div class="school-visual">
+                <img
+                  class="school-campus"
+                  src="images/cuhk-campus.jpg"
+                  alt="香港中文大学校园"
+                  width="960"
+                  height="720"
+                />
+                <img
+                  class="school-logo"
+                  src="images/cuhk-sjc.png"
+                  alt="香港中文大学新闻与传播学院 School of Journalism and Communication"
+                  width="1024"
+                  height="213"
+                />
               </div>
-            </dl>
-          </div>
+              <div class="school-body">
+                <p class="school-time">2021.08 — 2024.12</p>
+                <p class="school-degree">本科 / 新闻传播学 · 广告与公关</p>
+                <h3>香港中文大学</h3>
+                <p class="school-college">新闻与传播学院 · School of Journalism and Communication</p>
+                <p class="school-courses">
+                  <span class="school-courses-label">主修课程：</span>品牌整合营销（Integrated Marketing Campaign）、受众分析与策略（Audience Analysis &amp; Strategy）、媒体与 AI 工具应用（AI Applications in Media）、传播理论（Communication Theory）
+                </p>
+                <p class="school-award">岑维休新闻与传播学业优异奖，2024</p>
+              </div>
+            </li>
+          </ol>
+          <p class="path-label"><span>成长路径</span></p>
         </div>
       </section>
 
-      <section id="work" class="section work">
+      <section id="internships" class="section internships">
         <div class="section-head">
-          <p class="eyebrow">02 — 在做的事</p>
-          <h2>能力与方向</h2>
+          <p class="eyebrow">02 — 实习经历</p>
+          <h2>我的实习经历</h2>
         </div>
-        <ul class="cards">
-          <li class="card">
-            <h3>产品与界面</h3>
-            <p>从问题到页面：结构、流程、组件与文案。让第一次打开的人知道该往哪走。</p>
-          </li>
-          <li class="card">
-            <h3>个人站点与叙事</h3>
-            <p>封面、作品集、随笔。少而准的视觉，让访问者在三十秒内建立印象。</p>
-          </li>
-          <li class="card">
-            <h3>小工具</h3>
-            <p>为自己和身边人做的轻量工具：记录、整理、提醒。能用比好看更重要，但两者可以一起做到。</p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="notes" class="section notes">
-        <div class="section-head">
-          <p class="eyebrow">03 — 近况</p>
-          <h2>最近在想</h2>
-        </div>
-        <ol class="note-list">
+        <ol class="experience-list">
           <li>
-            <time datetime="2026-08">2026.08</time>
-            <p>在整理一套个人站点模板：封面只做一件事——让人愿意往下读。</p>
-          </li>
-          <li>
-            <time datetime="2026-06">2026.06</time>
-            <p>重读了一些早期网页。发现留白和字号，比任何动效都更决定气质。</p>
+            <p class="experience-time">2026.05 – 至今</p>
+            <div class="experience-body">
+              <div class="experience-head">
+                <img
+                  class="experience-logo"
+                  src="images/cmg.png"
+                  alt="中央广播电视总台 CMG"
+                  width="96"
+                  height="58"
+                />
+                <div>
+                  <h3>实习记者</h3>
+                  <p class="experience-org">中央广播电视总台亚太总站香港站</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  参与中英双语新闻采编，协助记者采访香港各界人士。覆盖中国民乐、FIFA 世界杯博物馆、赤柱国际龙舟锦标赛，以及南海仲裁案裁决新批驳等发布会。前期负责资料搜集与嘉宾联络，跟拍采访，后期协助写稿与剪辑。相关内容在 CGTN、CCTV-4、央视新闻、央视频播出。
+                </li>
+                <li>
+                  参与庆祝香港回归祖国 29 周年等主题报道：从前期策划到典礼、访谈与群众互动等现场执行，协助素材统筹与初稿撰写；直播时配合调度与应急，保障流程顺畅。
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
-            <time datetime="2026-03">2026.03</time>
-            <p>开始把工作笔记公开化，挑出那些真正改过一次决策的句子。</p>
+            <p class="experience-time">2025.09 – 2025.12</p>
+            <div class="experience-body">
+              <div class="experience-head">
+                <img
+                  class="experience-logo experience-logo-wide"
+                  src="images/earth-org.png"
+                  alt="Earth.Org"
+                  width="160"
+                  height="40"
+                />
+                <div>
+                  <h3>新媒体运营 / 撰稿人</h3>
+                  <p class="experience-org">
+                    <a href="https://earth.org/" rel="noopener noreferrer" target="_blank">Earth.Org</a>
+                    · 香港
+                  </p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  参与 Instagram 日常运营：策划并制作突发气候快讯、每周资讯摘要、互动短视频与问答栏目，并负责深度专题的编辑与发布。
+                </li>
+                <li>
+                  COP30 国际气候大会期间，撰写并发布实时会议总结。单条帖文获赞 16k+，约为同期平均互动的五倍，账号整体曝光提升约 50%。
+                </li>
+                <li>
+                  参与平台首篇数据可视化报道：从选题、用 R Studio 清洗与分析数据、制作信息图表到成稿，把数据洞察接到时效新闻里，让报道更好读、也好传。
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="experience-time">2024.05 – 2024.07</p>
+            <div class="experience-body">
+              <div class="experience-head">
+                <img
+                  class="experience-logo experience-logo-wide"
+                  src="images/iqiyi.png"
+                  alt="爱奇艺"
+                  width="160"
+                  height="48"
+                />
+                <div>
+                  <h3>实习导演</h3>
+                  <p class="experience-org">爱奇艺 · 长沙</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  参与综艺前期策划：协助梳理剧本叙事、讨论分镜与视觉风格，并在策划会上把创意落到具体脚本。随团队赴北京、上海、青岛等地勘景，协助预判调度问题，保障拍摄推进。
+                </li>
+                <li>
+                  辅助后期：在剪辑师与导演指导下参与节奏与风格校准，让成片既贴合创作意图，也照顾观看体验。
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <p class="experience-time">2023.05 – 2023.09</p>
+            <div class="experience-body">
+              <div class="experience-head">
+                <img
+                  class="experience-logo"
+                  src="images/jlrtv.png"
+                  alt="吉林广播电视台"
+                  width="120"
+                  height="72"
+                />
+                <div>
+                  <h3>实习记者</h3>
+                  <p class="experience-org">吉林广播电视台 · 长春</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  参与短视频新闻的策划与制作：协助选题、写脚本与后期剪辑。在团队指导下，按热点与平台传播节奏做内容，累计参与 90 余条短视频，投放微博、抖音与微信公众号。
+                </li>
+                <li>
+                  参与专题访谈全流程：从故事构思、选题提案、脚本与拍摄，到剪辑发布，共 4 场。主题包括一汽红旗品牌专题、国际献血日公益宣传，以及东北亚国际博览会外交访谈。
+                </li>
+              </ul>
+            </div>
           </li>
         </ol>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section-head project-head">
+          <div>
+            <p class="eyebrow">03 — 项目成果</p>
+            <h2>作品集</h2>
+          </div>
+          <div class="project-controls">
+            <button type="button" class="project-arrow" data-dir="-1" aria-label="上一件作品">←</button>
+            <button type="button" class="project-arrow" data-dir="1" aria-label="下一件作品">→</button>
+          </div>
+        </div>
+        <div class="project-timeline" aria-label="作品时间线">
+          <div class="project-timeline-line" aria-hidden="true">
+            <span class="project-timeline-fill"></span>
+          </div>
+          <ol class="project-timeline-points">
+            <li>
+              <button type="button" data-index="0">
+                <span class="timeline-dot"></span>
+                <time datetime="2023-09">2023.09</time>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-index="1">
+                <span class="timeline-dot"></span>
+                <time datetime="2024-08">2024.08</time>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-index="2">
+                <span class="timeline-dot"></span>
+                <time datetime="2025-12">2025.12</time>
+              </button>
+            </li>
+            <li class="is-current">
+              <button type="button" data-index="3">
+                <span class="timeline-dot"></span>
+                <time datetime="2026-02">2026.02</time>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-index="4">
+                <span class="timeline-dot"></span>
+                <time datetime="2026-07">2026.07</time>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-index="5">
+                <span class="timeline-dot"></span>
+                <time datetime="2026-07">2026.07</time>
+              </button>
+            </li>
+          </ol>
+        </div>
+        <div class="project-track" tabindex="0">
+          <ul class="project-grid">
+            <li class="project" data-year="2023.09">
+              <a class="project-cover project-cover-photo" href="https://pinpoint.com.cuhk.edu.hk/asiana-airlines/" rel="noopener noreferrer" target="_blank" aria-label="打开韩亚航空品牌营销策划项目">
+                <img
+                  src="images/project-asiana.jpg"
+                  alt="韩亚航空品牌营销策划项目"
+                  width="1200"
+                  height="800"
+                />
+              </a>
+              <h3>韩亚航空（香港）</h3>
+              <p class="project-meta">品牌营销策划 · 2023.09–2023.12</p>
+              <ul>
+                <li>
+                  在 3 人小组中为韩亚航空设计香港毕业季特别活动，结合 MBTI 人格测试触达应届毕业生，提案 TVC、海报与西九龙文化区线下展览。
+                </li>
+                <li>
+                  负责目标受众研究与访谈视频制作剪辑。活动获韩亚航空社媒与公关部良好反响，并于 2024 年被参考实施。
+                </li>
+              </ul>
+              <a class="project-link" href="https://pinpoint.com.cuhk.edu.hk/asiana-airlines/" rel="noopener noreferrer" target="_blank">查看作品</a>
+            </li>
+            <li class="project" data-year="2024.08">
+              <a class="project-cover project-cover-photo" href="https://pinpoint.com.cuhk.edu.hk/loccitane/" rel="noopener noreferrer" target="_blank" aria-label="打开欧舒丹亚太地区可持续发展项目">
+                <img
+                  src="images/project-loccitane.jpg"
+                  alt="欧舒丹亚太地区可持续发展项目"
+                  width="1200"
+                  height="800"
+                />
+              </a>
+              <h3>欧舒丹亚太地区可持续发展项目（香港）</h3>
+              <p class="project-meta">品牌营销策划 · 2024.08–2024.12</p>
+              <ul>
+                <li>
+                  在欧舒丹亚太区可持续发展推广中，策划并执行 Instagram、微信、小红书等活动，传播绿色产品与可持续消费理念，提升品牌形象。
+                </li>
+                <li>
+                  在 4 人小组里负责目标受众分析与市场研究，梳理需求、偏好与趋势，为营销策略和产品定位提供依据。
+                </li>
+              </ul>
+              <a class="project-link" href="https://pinpoint.com.cuhk.edu.hk/loccitane/" rel="noopener noreferrer" target="_blank">查看作品</a>
+            </li>
+            <li class="project" data-year="2025.12">
+              <a class="project-cover project-cover-photo" href="https://earth.org/10-years-of-the-paris-agreement-disparities-in-national-responsibility-threaten-climate-goal/" rel="noopener noreferrer" target="_blank" aria-label="打开巴黎协定十年数据可视化报道">
+                <img
+                  src="images/project-earthorg.jpg"
+                  alt="10 Years of the Paris Agreement：Earth.org 数据可视化报道"
+                  width="1200"
+                  height="800"
+                />
+              </a>
+              <h3>Earth.Org｜巴黎协定十年</h3>
+              <p class="project-meta">数据可视化新闻 · COP30 · 2025.12</p>
+              <ul>
+                <li>
+                  实习期间参与平台首篇数据可视化报道的策划与制作，自主完成选题、R Studio 数据清洗与分析、信息图表到成稿的全流程。
+                </li>
+                <li>
+                  把数据洞察接到时效新闻，提升报道的传播力与可读性。文章署名 Vicky Zhang，发布于 Earth.Org。
+                </li>
+              </ul>
+              <a class="project-link" href="https://earth.org/10-years-of-the-paris-agreement-disparities-in-national-responsibility-threaten-climate-goal/" rel="noopener noreferrer" target="_blank">查看作品</a>
+            </li>
+            <li class="project is-active project-featured" data-year="2026.02">
+              <a class="project-cover project-cover-photo" href="https://jmsc6110a.com/capstone2026/a-place-to-land-hong-kongs-urban-parrots/" rel="noopener noreferrer" target="_blank" aria-label="打开香港大学硕士研究生毕业项目">
+                <img
+                  src="images/project-01.jpg"
+                  alt="香港濒危物种小葵花鹦鹉纪录片 A Place to Land"
+                  width="1200"
+                  height="800"
+                />
+              </a>
+              <h3>香港大学硕士研究生毕业项目</h3>
+              <p class="project-meta">香港濒危物种小葵花鹦鹉英文新闻纪录片制作</p>
+              <ul>
+                <li>
+                  与同学合作完成 13 分钟英文新闻纪录片，关注香港濒危小葵花鹦鹉。从策划到成片全程主导，独立联络并采访 5 位专家与爱好者。
+                </li>
+                <li>
+                  独立完成后剪与成片，获港大新闻及传媒研究中心 A 级评价，并发布于未来媒体学院官网主页。
+                </li>
+              </ul>
+              <a class="project-link" href="https://jmsc6110a.com/capstone2026/a-place-to-land-hong-kongs-urban-parrots/" rel="noopener noreferrer" target="_blank">查看作品</a>
+            </li>
+            <li class="project" data-year="2026.07">
+              <a class="project-cover project-cover-photo" href="https://content-static.cctvnews.cctv.com/snow-book/video.html?item_id=12015390954090626004&amp;t=1782901822102&amp;toc_style_id=vi" rel="noopener noreferrer" target="_blank" aria-label="打开庆香港回归祖国 29 周年报道">
+                <img
+                  src="images/project-cctv.jpg"
+                  alt="庆香港回归祖国 29 周年报道 CCTV4"
+                  width="1200"
+                  height="800"
+                />
+              </a>
+              <h3>庆香港回归祖国 29 周年报道（CCTV4）</h3>
+              <p class="project-meta">中央广播电视总台 · 2026.07</p>
+              <ul>
+                <li>
+                  协助总台记者完成回归主题系列报道：参与前期策划与典礼、访谈、群众互动等现场执行，配合素材统筹与新闻初稿。
+                </li>
+                <li>
+                  直播现场协助调度协调与应急配合，保障播出流程顺畅。相关内容在 CCTV4 等平台播出。
+                </li>
+              </ul>
+              <a class="project-link" href="https://content-static.cctvnews.cctv.com/snow-book/video.html?item_id=12015390954090626004&amp;t=1782901822102&amp;toc_style_id=vi" rel="noopener noreferrer" target="_blank">查看作品</a>
+            </li>
+            <li class="project" data-year="2026.07">
+              <a class="project-cover project-cover-photo" href="https://news.cgtn.com/news/2026-07-14/VHJhbnNjcmlwdDkxNTM4/index.html" rel="noopener noreferrer" target="_blank" aria-label="打开南海安全圆桌对话报道">
+                <img
+                  src="images/project-scs.jpg"
+                  alt="南海安全圆桌对话报道 South China Sea Issue Report"
+                  width="1200"
+                  height="800"
+                />
+              </a>
+              <h3>南海安全圆桌对话报道</h3>
+              <p class="project-meta">South China Sea Issue Report · CGTN · 2026.07</p>
+              <ul>
+                <li>
+                  参与总台亚太总站香港站中英双语采编，协助记者采访「南海仲裁案裁决新批驳」等发布会：前期资料与嘉宾联络，跟拍采访，后期协助写稿与剪辑。
+                </li>
+                <li>
+                  相关内容在 CGTN、CCTV4、央视新闻、央视频等平台播出。
+                </li>
+              </ul>
+              <a class="project-link" href="https://news.cgtn.com/news/2026-07-14/VHJhbnNjcmlwdDkxNTM4/index.html" rel="noopener noreferrer" target="_blank">查看作品</a>
+            </li>
+          </ul>
+        </div>
+        <p class="project-hint">左右滑动查看其他</p>
       </section>
 
       <section id="contact" class="section contact">
         <div class="section-head">
           <p class="eyebrow">04 — 联系</p>
-          <h2>一起做点什么</h2>
+          <h2>下一段经历 也许可以一起创造</h2>
         </div>
-        <p class="contact-lead">
-          合作、闲聊、或者只是打个招呼，都可以写信。我通常会在几天内回复。
-        </p>
         <ul class="contact-links">
           <li>
-            <a href="mailto:hello@linzhao.me">hello@linzhao.me</a>
+            <a href="mailto:vickyzhanglinzhuo@163.com">vickyzhanglinzhuo@163.com</a>
             <span>邮箱</span>
           </li>
           <li>
-            <a href="https://github.com/" rel="noopener noreferrer" target="_blank">GitHub</a>
-            <span>代码</span>
+            <div class="contact-phones">
+              <a href="tel:+8615504432110">+86 15504432110</a>
+              <span class="contact-sep" aria-hidden="true">/</span>
+              <a href="tel:+85267051563">+852 67051563</a>
+            </div>
+            <span>电话</span>
           </li>
           <li>
-            <a href="#" aria-disabled="true">作品集</a>
-            <span>即将开放</span>
+            <a href="#projects">项目成果</a>
+            <span>作品集</span>
           </li>
         </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© 2026 林昭 · 个人网站封面</p>
-      <p>把下面的名字、简介和链接换成你自己的即可。</p>
+      <p>© 2026 张琳茁</p>
+      <p>香港大学新闻学硕士 · 香港中文大学新闻传播学</p>
     </footer>
 
     <script src="script.js"></script>
