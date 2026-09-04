@@ -40,34 +40,33 @@ if (track && cards.length) {
     }
   };
 
-  const go = (dir) => {
-    const index = cards.findIndex((card) => card.classList.contains("is-active"));
-    const next = cards[Math.min(cards.length - 1, Math.max(0, index + dir))];
-    next.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-  };
-
   const featured = document.querySelector(".project-featured") || cards[2] || cards[0];
 
-  const revealFeatured = () => {
-    featured.scrollIntoView({ inline: "center", block: "nearest" });
+  const centerCard = (card, behavior = "auto") => {
+    if (!card) return;
+    const left =
+      card.offsetLeft - (track.clientWidth - card.offsetWidth) / 2;
+    track.scrollTo({ left: Math.max(0, left), behavior });
     setActive();
   };
+
+  // Center featured project in the track only — do not scroll the page.
+  const revealFeatured = () => centerCard(featured, "auto");
 
   track.addEventListener("scroll", setActive, { passive: true });
   window.addEventListener("resize", setActive);
 
   document.querySelectorAll(".project-arrow").forEach((button) => {
-    button.addEventListener("click", () => go(Number(button.dataset.dir)));
+    button.addEventListener("click", () => {
+      const index = cards.findIndex((card) => card.classList.contains("is-active"));
+      const next = cards[Math.min(cards.length - 1, Math.max(0, index + Number(button.dataset.dir)))];
+      centerCard(next, "smooth");
+    });
   });
 
   document.querySelectorAll(".project-timeline-points button").forEach((button) => {
     button.addEventListener("click", () => {
-      const index = Number(button.dataset.index);
-      cards[index]?.scrollIntoView({
-        behavior: "smooth",
-        inline: "center",
-        block: "nearest",
-      });
+      centerCard(cards[Number(button.dataset.index)], "smooth");
     });
   });
 
