@@ -1,5 +1,15 @@
 const nav = document.querySelector(".nav");
 
+// Always open on the hero; ignore restored scroll / leftover hash links.
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+if (location.hash) {
+  history.replaceState(null, "", location.pathname + location.search);
+}
+window.scrollTo(0, 0);
+window.addEventListener("load", () => window.scrollTo(0, 0));
+
 const onScroll = () => {
   nav.style.borderBottomColor =
     window.scrollY > 12 ? "rgba(176, 122, 138, 0.32)" : "rgba(176, 122, 138, 0.22)";
